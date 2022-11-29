@@ -1,0 +1,8 @@
+.navBar{
+    background-color: #3D405B;
+    padding: 1rem 0;
+}
+
+.navBar a{
+    text-decoration: none;
+}

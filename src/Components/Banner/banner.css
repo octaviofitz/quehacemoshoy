@@ -1,0 +1,11 @@
+.Banner{
+    width: 100vw;
+    height: 35vh;
+}
+
+@media (min-width: 1024px){
+    .Banner{
+        width: 100vw;
+        height: 53vh;
+    }
+}

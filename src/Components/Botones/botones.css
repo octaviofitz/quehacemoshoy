@@ -1,0 +1,47 @@
+.botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 3rem;
+    color: #F4F1DE;
+}
+
+.botones .botonIndividual{
+    padding: 1rem 0;
+    margin: 0.35rem 0;
+}
+.botones a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#primerBoton{
+    background-color: #E07A5F;
+    border: none;
+}
+
+#segundoBoton{
+    background-color: #81B29A;
+    border: none;
+}
+
+#tercerBoton{
+    background-color: #F2CC8F;
+    border: none;
+}
+
+#cuartoBoton{
+    background-color: #3D405B;
+    border: none;
+}
+
+@media (min-width: 1024px) {
+    .botones{
+        flex-direction: row;
+    }
+    
+    .botones .botonIndividual{
+        padding: 2rem 3rem;
+        margin: 0.35rem 2rem;
+    }
+}
