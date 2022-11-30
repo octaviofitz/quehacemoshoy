@@ -2,9 +2,28 @@
     background-color: #3D405B;
     padding: 1.5rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer .titulo{
     text-align: center;
     color: #F4F1DE;
+}
+
+.footer .container-lista{
+    display: flex;
+    justify-content: center;
+}
+.footer .lista{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+.footer .iconos{
+    width: 20vw;
+    color: #ffffff;
+    margin: 1rem 0.75rem 0rem;
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Hoy() {
+function Hoy(props) {
     return (
         <div>
-            <h1>Eventos del día de Hoy</h1>
+            
         </div>
     );
 }

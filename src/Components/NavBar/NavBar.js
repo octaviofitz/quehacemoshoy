@@ -18,7 +18,6 @@ function NavBar() {
           <Nav className="me-auto">
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Planes</Nav.Link>
             <Link to='nosotros'> <Nav.Link href="/nosotros">Nosotros</Nav.Link> </Link>
           </Nav>
         </Navbar.Collapse>

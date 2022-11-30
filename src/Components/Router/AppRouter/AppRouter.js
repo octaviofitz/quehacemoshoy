@@ -11,7 +11,7 @@ import Banner from '../../Banner/Banner';
 import Footer from '../../Footer/Footer';
 import HomePage from '../../../Pages/Home/HomePage';
 import Nosotros from '../../../Pages/Nosotros/Nosotros';
-import Hoy from '../../Eventos/Hoy/Hoy';
+import HoyContainer from '../../Eventos/Hoy/HoyContainer/HoyContainer';
 import Semana from '../../Eventos/Semana/Semana'
 import Siguiente from '../../Eventos/Siguiente/Siguiente'
 import Todos from '../../Eventos/Todos/Todos'
@@ -32,7 +32,7 @@ function AppRouter() {
                 <Route path='/' element={<HomePage />} />
                 <Route path='/nosotros' element={<Nosotros />} />
                
-                <Route path='/hoy' element={<Hoy />} />
+                <Route path='/hoy' element={<HoyContainer />} />
                 <Route path='/semana' element={<Semana />} />
                 <Route path='/proximos' element={<Siguiente />} />
                 <Route path='/todos' element={<Todos />} />
