@@ -6,25 +6,9 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
 /* css */
-import '../HoyList/hoylist.css'
+import '../TodosList/todosList.css'
 
-function HoyList({data, fechaRestante}) {
-
-/* FechasRestantes */
-/* var FechaActual= 	Math.round(new Date().getTime()/1000.0)
-console.log("Fecha ACTUAL: ", FechaActual);  
-
-var FechaDelEvento= (data.fecha.seconds)
-console.log("Fecha evento en Milisegundos: ", FechaDelEvento); 
-
-let DiasRestantesMS= FechaDelEvento - FechaActual;
-let DiasRestantesSEG= DiasRestantesMS / 3600;
-let DiasDiferencia= Math.round(DiasRestantesSEG / 24) ;
-
-console.log("La fecha en horas es: ", DiasRestantesSEG);
-console.log("FALTAN: ", DiasDiferencia, "días para el evento"); 
-
-console.log(data); */
+function TodosList({data}) {
 
     return (
         <section className='lista'>
@@ -52,4 +36,4 @@ console.log(data); */
     );
 }
 
-export default HoyList;
+export default TodosList;

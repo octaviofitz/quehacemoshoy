@@ -1,30 +1,30 @@
 import React, { useState, useEffect} from 'react'
 import { collection, getDocs, getFirestore } from 'firebase/firestore';
-import HoyList from '../HoyList/HoyList';
+import SemanaList from '../SemanaList/SemanaList'
 
 /* css */
-import '../HoyContainer/hoyContainer.css'
+import '../SemanaContainer/semanaContainer.css'
 
-function Hoy() {
+function SemanaContainer() {
 
-    const [eventosHoy, setEventosHoy] = useState([]);
+    const [eventosSemana, setEventosSemana] = useState([]);
 
     useEffect(()=>{
         const querydb= getFirestore()
         const queryCollection= collection(querydb, 'Prueba')
         getDocs(queryCollection)
-        .then(res => setEventosHoy(res.docs.map(evento => ({id: evento.id, ...evento.data() }))));
+        .then(res => setEventosSemana(res.docs.map(evento => ({id: evento.id, ...evento.data() }))));
     },[])
 
 /* Fecha Actual */
-var FechaActual= 	Math.round(new Date().getTime()/1000.0)
+var FechaActual= Math.round(new Date().getTime()/1000.0)
 
     return (
-        <div className='containerHoy'>
+        <div className='containerSemana'>
 
-            <h2 className='titulo'>Eventos en el día de la fecha</h2>           
+            <h2 className='titulo'>Eventos esta semana</h2>           
 
-            {eventosHoy.map((evento) =>{
+            {eventosSemana.map((evento) =>{
     
                 /* Map y cálculo de días restantes para el evento */
                 var FechaDelEvento= (evento.fecha.seconds)
@@ -35,10 +35,14 @@ var FechaActual= 	Math.round(new Date().getTime()/1000.0)
 
                 return(
                     <div>
-                        {DiasDiferencia !== 1 ? null : 
+                        {DiasDiferencia < 7 ?
                         <div className='eventos'>
-                        <HoyList data={evento} fechaRestante={DiasDiferencia} />
-                    </div> }
+                        <SemanaList data={evento} fechaRestante={DiasDiferencia} />
+                    </div> 
+                    :
+                    null
+                        } 
+                        
                     </div>
                 )
             }) }
@@ -46,4 +50,4 @@ var FechaActual= 	Math.round(new Date().getTime()/1000.0)
     );
 }
 
-export default Hoy;
+export default SemanaContainer;

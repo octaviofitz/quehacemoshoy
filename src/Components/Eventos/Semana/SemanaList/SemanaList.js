@@ -6,9 +6,9 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
 /* css */
-import '../HoyList/hoylist.css'
+import '../SemanaList/semanaList.css'
 
-function HoyList({data, fechaRestante}) {
+function SemanaList({data, fechaRestante}) {
 
 /* FechasRestantes */
 /* var FechaActual= 	Math.round(new Date().getTime()/1000.0)
@@ -52,4 +52,4 @@ console.log(data); */
     );
 }
 
-export default HoyList;
+export default SemanaList;
