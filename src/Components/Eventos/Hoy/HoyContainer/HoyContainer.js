@@ -35,10 +35,25 @@ var FechaActual= 	Math.round(new Date().getTime()/1000.0)
 
                 return(
                     <div>
-                        {DiasDiferencia !== 1 ? null : 
+
+
+                       {/*  {DiasDiferencia !== 1 ? null : 
                         <div className='eventos'>
                         <HoyList data={evento} fechaRestante={DiasDiferencia} />
-                    </div> }
+                    </div> } */}
+
+                    {DiasDiferencia === 1 || DiasDiferencia === 0 
+                    ?
+                       <div>
+                        <HoyList data={evento} />
+                       </div> 
+                       :
+                       null
+                         }
+                    
+                    
+                    
+                    
                     </div>
                 )
             }) }
