@@ -1,9 +1,9 @@
 import React, { useState, useEffect} from 'react'
 import { collection, getDocs, getFirestore } from 'firebase/firestore';
-import TodosList from '../../TodosList/TodosList';
+import TodosList from '../TodosList/TodosList';
 
 /* css */
-import '../TodosContainer/todosContainer.css'
+import './todosContainer.css'
 
 function TodosContainer() {
 
@@ -20,6 +20,7 @@ function TodosContainer() {
         <div className='containerTodos'>
 
             <h2 className='titulo'>Todos los eventos</h2>           
+            <div className='containerComponente'>
 
             {EventosTodos.map((evento) =>{
                 return(
@@ -29,6 +30,7 @@ function TodosContainer() {
                     
                 )
             }) }
+            </div>  
         </div>   
     );
 }

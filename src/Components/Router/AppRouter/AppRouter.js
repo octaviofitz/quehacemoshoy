@@ -13,9 +13,8 @@ import HomePage from '../../../Pages/Home/HomePage';
 import Nosotros from '../../../Pages/Nosotros/Nosotros';
 import HoyContainer from '../../Eventos/Hoy/HoyContainer/HoyContainer';
 import SemanaContainer from '../../Eventos/Semana/SemanaContainer/SemanaContainer';
-import Siguiente from '../../Eventos/Siguiente/Siguiente'
-/* import Todos from '../../Eventos/Todos/Todos'
- */import TodosContainer from '../../Eventos/Todos/Todos/TodosContainer/TodosContainer';
+import MesContainer from '../../Eventos/Mes/MesContainer/MesContainer';
+import TodosContainer from '../../Eventos/Todos/TodosContainer/TodosContainer';
 
 function AppRouter() {
     return (
@@ -35,7 +34,7 @@ function AppRouter() {
                
                 <Route path='/hoy' element={<HoyContainer />} />
                 <Route path='/semana' element={<SemanaContainer />} />
-                <Route path='/proximos' element={<Siguiente />} />
+                <Route path='/mes' element={<MesContainer />} />
                 <Route path='/todos' element={<TodosContainer />} />
                
                 </Routes>

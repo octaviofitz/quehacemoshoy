@@ -1,9 +1,15 @@
 .footer {
-    background-color: #3D405B;
+    background-color: #FD6735;
     padding: 1.5rem;
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+.bi-envelope,
+.bi-instagram{
+    color: white;
+    width: 10vw;
 }
 
 .footer .titulo{
@@ -26,4 +32,10 @@
     width: 20vw;
     color: #ffffff;
     margin: 1rem 0.75rem 0rem;
+}
+
+@media (min-width: 1024px){
+    .footer .iconos{
+        width: 3vw;
+    }
 }

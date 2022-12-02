@@ -1,0 +1,31 @@
+.containerTarjeta{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 3rem;
+}
+
+.tarjeta{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px !important;
+        border-radius: 20px !important;
+}
+
+.containerTarjeta .tarjeta #lugar{
+    font-weight: 900;
+    color: rgb(162, 162, 162);
+    font-size: 1.1rem;
+}
+
+.containerTarjeta .tarjeta #titulo{
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.containerTarjeta .tarjeta #fecha{
+    color: #fff;
+}
+
+.containerTarjeta .tarjeta .icono,
+.containerTarjeta .tarjeta .masInformacion{
+    color: #fff;
+}
+

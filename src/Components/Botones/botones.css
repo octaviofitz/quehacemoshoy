@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center;
     margin: 2rem 3rem;
-    color: #F4F1DE;
+    color: #DECFD0;
+    
 }
 
 .botones .botonIndividual{
@@ -13,25 +14,31 @@
 .botones a{
     text-decoration: none;
     color: #ffffff;
+    font-weight: 700;
+}
+
+.botones a:hover{
+    color: #ffff;
+    font-weight: 900;
 }
 
 #primerBoton{
-    background-color: #E07A5F;
+    background-color: #E42538;
     border: none;
 }
 
 #segundoBoton{
-    background-color: #81B29A;
+    background-color: #F94E7B;
     border: none;
 }
 
 #tercerBoton{
-    background-color: #F2CC8F;
+    background-color: #F8BD4F;
     border: none;
 }
 
 #cuartoBoton{
-    background-color: #3D405B;
+    background-color: #4C918F;
     border: none;
 }
 

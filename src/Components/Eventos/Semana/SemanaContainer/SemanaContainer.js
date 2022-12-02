@@ -22,7 +22,9 @@ var FechaActual= Math.round(new Date().getTime()/1000.0)
     return (
         <div className='containerSemana'>
 
-            <h2 className='titulo'>Eventos esta semana</h2>           
+            <h2 className='titulo'>Eventos esta semana</h2>   
+
+            <div className='containerComponente'>
 
             {eventosSemana.map((evento) =>{
     
@@ -44,8 +46,11 @@ var FechaActual= Math.round(new Date().getTime()/1000.0)
                         } 
                         
                     </div>
+                    
                 )
+                
             }) }
+              </div> 
         </div>   
     );
 }

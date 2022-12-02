@@ -1,4 +1,21 @@
 .containerSemana .titulo{
-    margin: 2rem 0;
+    margin: 1.5rem 1rem 0rem;
     text-align: center;
+    font-weight: 600;
+    font-size: 2.2rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.containerComponente{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px){
+    .containerComponente{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
 }

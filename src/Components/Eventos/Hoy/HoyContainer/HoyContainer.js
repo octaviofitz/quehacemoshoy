@@ -22,7 +22,10 @@ var FechaActual= 	Math.round(new Date().getTime()/1000.0)
     return (
         <div className='containerHoy'>
 
-            <h2 className='titulo'>Eventos en el día de la fecha</h2>           
+            <h2 className='titulo'>Eventos hoy</h2>       
+
+                        <div className='containerComponente'>
+    
 
             {eventosHoy.map((evento) =>{
     
@@ -32,15 +35,10 @@ var FechaActual= 	Math.round(new Date().getTime()/1000.0)
                 let DiasRestantesMS= FechaDelEvento - FechaActual;
                 let DiasRestantesSEG= DiasRestantesMS / 3600;
                 let DiasDiferencia= Math.round(DiasRestantesSEG / 24) ;
-
+                    console.log(DiasDiferencia);
                 return(
+
                     <div>
-
-
-                       {/*  {DiasDiferencia !== 1 ? null : 
-                        <div className='eventos'>
-                        <HoyList data={evento} fechaRestante={DiasDiferencia} />
-                    </div> } */}
 
                     {DiasDiferencia === 1 || DiasDiferencia === 0 
                     ?
@@ -50,13 +48,10 @@ var FechaActual= 	Math.round(new Date().getTime()/1000.0)
                        :
                        null
                          }
-                    
-                    
-                    
-                    
                     </div>
                 )
             }) }
+            </div>
         </div>   
     );
 }

@@ -1,8 +1,36 @@
 .navBar{
-    background-color: #3D405B;
+    background-color: #FD6735;
     padding: 1rem 0;
 }
 
 .navBar a{
     text-decoration: none;
+}
+
+.navBar .icono{
+    width: 10vw;
+    margin-right: 0.5rem;
+}
+
+@media (min-width: 768px){
+    .navBar .icono{
+        width: 7vw;
+        margin-right: 0.5rem;
+    }
+    
+}
+
+@media (min-width: 1024px){
+    .navBar .icono{
+        width: 4vw;
+        margin-right: 0.5rem;
+    }
+}
+
+@media (min-width: 1440px){
+    .navBar .icono{
+        width: 3vw;
+        margin-right: 0.5rem;
+    }
+    
 }

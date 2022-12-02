@@ -1,0 +1,23 @@
+.mes .titulo{
+    text-align: center;
+    margin: 2rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+
+.mes .containerComponente{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+@media (min-width: 768px){
+    
+.mes .containerComponente{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+}
