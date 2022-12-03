@@ -23,9 +23,6 @@ function MesContainer() {
 
     console.log("estoy consiguiendo el MesActual actual: ?", mesActual);
 
-
-
-
     return (
         <div className='mes'>
             <h2 className='titulo'>Eventos este mes</h2>

@@ -25,6 +25,4 @@ p, h1, h2, h3, h4, a{
     border-radius: 50%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;900&family=Open+Sans:wght@300;400&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;900&family=Open+Sans:wght@300;400&family=Poppins:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Mulish:wght@200;300;400;500;600;700;900&family=Nunito:wght@400;600;800&family=Open+Sans:wght@300;400&family=Poppins:wght@500;600&display=swap');

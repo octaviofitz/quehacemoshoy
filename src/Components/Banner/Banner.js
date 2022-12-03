@@ -1,13 +1,13 @@
-import React, { Component }  from 'react';
+import React from 'react';
 
-import FOTO from '../../img/banner.jpg'
+/* Css */
 import '../Banner/banner.css'
 
 function Banner() {
     return (
         <div>
-{/*             <img src={FOTO} alt="banner" className="Banner" />
- */}        </div>
+             <img src="https://cdn.getcrowder.com/images/1640641688321-polooo.jpeg" alt="banner" className="Banner" />
+       </div>
     );
 }
 

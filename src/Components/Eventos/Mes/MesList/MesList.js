@@ -32,4 +32,4 @@ function MesList({data}) {
             )
             } 
 
-export default MesList
+export default MesList;
