@@ -12,13 +12,13 @@ function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" variant="dark" className='navBar'>
       <Container>
-       <Link to='/'><img src={Icono} className="icono" alt='tuRecital' /> <Navbar.Brand>TuRecitalHoy</Navbar.Brand></Link>
+       <Link to='/'><img src={Icono} className="icono" alt='tuRecital' /> <Navbar.Brand id='titulo'>TuRecitalHoy</Navbar.Brand></Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
           </Nav>
           <Nav>
-            <Link to='nosotros'> <Nav.Link href="/nosotros">Nosotros</Nav.Link> </Link>
+            <Link to='nosotros'> <Nav.Link href="/nosotros" id='navegacion'>Nosotros</Nav.Link> </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
