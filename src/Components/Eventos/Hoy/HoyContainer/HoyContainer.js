@@ -40,7 +40,7 @@ var FechaActual= 	Math.round(new Date().getTime()/1000.0)
 
                     <div>
 
-                    {DiasDiferencia === 1 || DiasDiferencia === 0 
+                    {DiasDiferencia === 1 || DiasDiferencia === 0 && FechaActual < DiasRestantesMS
                     ?
                        <div>
                         <HoyList data={evento} />
