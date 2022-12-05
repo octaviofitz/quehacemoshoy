@@ -15,6 +15,7 @@ import HoyContainer from '../../Eventos/Hoy/HoyContainer/HoyContainer';
 import SemanaContainer from '../../Eventos/Semana/SemanaContainer/SemanaContainer';
 import MesContainer from '../../Eventos/Mes/MesContainer/MesContainer';
 import TodosContainer from '../../Eventos/Todos/TodosContainer/TodosContainer';
+import Administrador from '../../Administrador/Login/Administrador';
 
 function AppRouter() {
     return (
@@ -36,6 +37,7 @@ function AppRouter() {
                 <Route path='/semana' element={<SemanaContainer />} />
                 <Route path='/mes' element={<MesContainer />} />
                 <Route path='/todos' element={<TodosContainer />} />
+                <Route path='/admin' element={<Administrador />} />
                
                 </Routes>
 
