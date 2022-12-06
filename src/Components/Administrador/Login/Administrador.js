@@ -1,22 +1,37 @@
-import React from 'react';
+/* import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
-import loginEmailPassword from './Function';
-
-
 import '../Login/administrador.css'
+
+import db from '../../../Firebase/firebase';
+import {getAuth, onAuthStateChanged} from 'firebase/auth'
+const auth = getAuth(db)
 
 function Administrador() {
 
-   /*  async function submitHandler(e) {
-        e.preventDefault();
-        const email= e.target.emailForm.value;
-        const password= e.target.passwordForm.value;
-         await loginEmailPassword(email, password);
-     }
- */
+  const {usuario, setUsuario} = useState(null);
+
+  onAuthStateChanged(auth, (usuarioFirebase) => {
+    if (usuarioFirebase) { 
+      setUsuario(usuarioFirebase);
+    } else {
+      setUsuario(null)
+    }
+  })
+
+  const [Registrando, setStateRegistrando] = useState(false);
+
+  function submitHandler(e) {
+    e.preventDefault();
+  
+    const email= e.target.elements.email.value;
+    const password= e.target.elements.password.value;
+
+    console.log('submit: ', email, password);
+    }
+
     return (
         <section className='login'>
             <Box
@@ -26,13 +41,14 @@ function Administrador() {
       }}
       noValidate
       autoComplete="off"
+      onSubmit={submitHandler}
     >
-      <TextField id="emailForm" label="Correo electrónico" variant="outlined" />
-      <TextField id="passwordForm" label="Contraseña" variant="outlined" />
+      <TextField id="email" label="Correo electrónico" variant="outlined" />
+      <TextField id="password" label="Contraseña" variant="outlined" />
       <Button variant="outlined" type='submit'>Enviar</Button>
     </Box>
         </section>
     );
 }
 
-export default Administrador;
+export default Administrador; */

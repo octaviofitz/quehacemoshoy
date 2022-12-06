@@ -18,6 +18,8 @@ function Hoy() {
 
 /* Fecha Actual */
 var FechaActual= 	Math.round(new Date().getTime()/1000.0)
+/* Fecha en ms */
+let FechaActualMS= Date.now();
 
     return (
         <div className='containerHoy'>
@@ -35,12 +37,16 @@ var FechaActual= 	Math.round(new Date().getTime()/1000.0)
                 let DiasRestantesMS= FechaDelEvento - FechaActual;
                 let DiasRestantesSEG= DiasRestantesMS / 3600;
                 let DiasDiferencia= Math.round(DiasRestantesSEG / 24) ;
-                    console.log(DiasDiferencia);
+/*                     console.log(DiasDiferencia);
+ */
+                    /* Fecha Evento en MS */
+                    let fechaEventoEnMs= evento.fecha.seconds * 1000;
+
                 return(
 
-                    <div>
+                    <div key={evento.id}>
 
-                    {DiasDiferencia === 1 || DiasDiferencia === 0 && FechaActual < DiasRestantesMS
+                    {DiasDiferencia === 1 || DiasDiferencia === 0 && FechaActualMS < fechaEventoEnMs
                     ?
                        <div>
                         <HoyList data={evento} />

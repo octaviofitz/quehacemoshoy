@@ -18,7 +18,7 @@ function NavBar() {
           <Nav className="me-auto">
           </Nav>
           <Nav>
-            <Link to='nosotros'> <Nav.Link href="/nosotros" id='navegacion'>Nosotros</Nav.Link> </Link>
+            <Link to='nosotros' id='navegacion'> Nosotros</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,6 +1,6 @@
 /* react */
 import React  from 'react';
-import {Routes, BrowserRouter, Route} from 'react-router-dom'
+import {Routes, BrowserRouter, Route} from 'react-router-dom';
 
 /* estilos */
 import '../AppRouter/appRouter.css'
@@ -16,6 +16,7 @@ import SemanaContainer from '../../Eventos/Semana/SemanaContainer/SemanaContaine
 import MesContainer from '../../Eventos/Mes/MesContainer/MesContainer';
 import TodosContainer from '../../Eventos/Todos/TodosContainer/TodosContainer';
 import Administrador from '../../Administrador/Login/Administrador';
+import DetalleEventoContainer from '../../Eventos/DetalleEvento/DetalleEventoContainer';
 
 function AppRouter() {
     return (
@@ -32,13 +33,13 @@ function AppRouter() {
 
                 <Route path='/' element={<HomePage />} />
                 <Route path='/nosotros' element={<Nosotros />} />
-               
                 <Route path='/hoy' element={<HoyContainer />} />
                 <Route path='/semana' element={<SemanaContainer />} />
                 <Route path='/mes' element={<MesContainer />} />
                 <Route path='/todos' element={<TodosContainer />} />
-                <Route path='/admin' element={<Administrador />} />
-               
+                <Route path='/evento/:id' element={<DetalleEventoContainer />} />
+{/*                 <Route path='/administrador' element={<Administrador />} />
+ */}               
                 </Routes>
 
             </div>

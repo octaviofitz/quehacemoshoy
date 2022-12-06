@@ -19,6 +19,9 @@ function SemanaContainer() {
 /* Fecha Actual */
 var FechaActual= Math.round(new Date().getTime()/1000.0)
 
+/* Fecha Actual en MS */
+let FechaActualMS= Date.now();
+
     return (
         <div className='containerSemana'>
 
@@ -27,7 +30,7 @@ var FechaActual= Math.round(new Date().getTime()/1000.0)
             <div className='containerComponente'>
 
             {eventosSemana.map((evento) =>{
-    
+
                 /* Map y cálculo de días restantes para el evento */
                 var FechaDelEvento= (evento.fecha.seconds)
 
@@ -35,11 +38,16 @@ var FechaActual= Math.round(new Date().getTime()/1000.0)
                 let DiasRestantesSEG= DiasRestantesMS / 3600;
                 let DiasDiferencia= Math.round(DiasRestantesSEG / 24) ;
 
+                /* calculo fecha evento en ms para luego comparar */
+                let fechaEventoEnMs= evento.fecha.seconds * 1000;
+
+
                 return(
-                    <div>
-                        {DiasDiferencia < 7 ?
+                    <div key={evento.id}>
+                        {DiasDiferencia < 7 && FechaActualMS < fechaEventoEnMs
+                        ?
                         <div className='eventos'>
-                        <SemanaList data={evento} fechaRestante={DiasDiferencia} />
+                        <SemanaList data={evento}/>
                     </div> 
                     :
                     null

@@ -16,6 +16,9 @@ function TodosContainer() {
         .then(res => setEventosTodos(res.docs.map(evento => ({id: evento.id, ...evento.data() }))));
     },[])
 
+    /* fecha actual en ms */
+    let fechaActualMS= Date.now();
+
     return (
         <div className='containerTodos'>
 
@@ -23,11 +26,19 @@ function TodosContainer() {
             <div className='containerComponente'>
 
             {EventosTodos.map((evento) =>{
+                let fechaEventoEnMs= evento.fecha.seconds * 1000;
+
                 return(
+                    <div key={evento.id}>                    
+                        {fechaActualMS < fechaEventoEnMs
+                         ?
                         <div className='eventos'>
                         <TodosList data={evento}/>
                     </div>      
-                    
+                    :
+                    null
+                    }
+                    </div>
                 )
             }) }
             </div>  

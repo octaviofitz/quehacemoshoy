@@ -1,9 +1,6 @@
 import React from 'react';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
 import { Card, Icon, Image } from 'semantic-ui-react'
+import {Link} from 'react-router-dom'
 
 
 /* css */
@@ -28,10 +25,8 @@ function HoyList({data, fechaRestante}) {
           </Card.Description>
           </Card.Content>
           <Card.Content extra id='mas'>
-          <a>
-              <Icon className='icono' name='rocket ' />
-             <span className='masInformacion'> Más información</span>
-          </a>
+              <Icon className='icono' name='rocket' />
+              <Link to={`/evento/${data.id}`}><span className='masInformacion'>Más información</span></Link>
           </Card.Content>
       </Card>
       </div>

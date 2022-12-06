@@ -34,6 +34,12 @@
     margin: 1rem 0.75rem 0rem;
 }
 
+@media (min-width: 768px){
+    .footer .iconos{
+        width: 7vw;
+    }
+}
+
 @media (min-width: 1024px){
     .footer .iconos{
         width: 3vw;

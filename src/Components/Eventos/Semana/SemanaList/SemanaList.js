@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, Icon, Image } from 'semantic-ui-react'
 
 /* css */
 import '../SemanaList/semanaList.css'
 
-function SemanaList({data, fechaRestante}) {
+function SemanaList({data}) {
 
 /* FechasRestantes */
 /* var FechaActual= 	Math.round(new Date().getTime()/1000.0)
@@ -40,10 +41,8 @@ console.log(data); */
           </Card.Description>
           </Card.Content>
           <Card.Content extra id='mas'>
-          <a>
-              <Icon className='icono' name='rocket ' />
-             <span className='masInformacion'> Más información</span>
-          </a>
+              <Icon className='icono' name='rocket' />
+              <Link to={`/evento/${data.id}`}><span className='masInformacion'>Más información</span></Link>
           </Card.Content>
       </Card>
       </div>

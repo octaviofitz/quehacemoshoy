@@ -7,3 +7,29 @@
     text-transform: uppercase;
     border-bottom: 6px dashed #4C918F;
 }
+
+.containerTodos .containerComponente{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 768px){
+
+    .containerTodos .titulo{
+        margin: 2rem 10rem 1rem;
+    }
+
+    .containerTodos .containerComponente{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1024px){
+    /* .containerTodos .containerComponente{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 10vw;
+    } */
+}

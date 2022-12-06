@@ -20,8 +20,12 @@ function MesContainer() {
 
     let fechaActual = new Date();
     let mesActual = fechaActual.getMonth() + 1;
-
-    console.log("estoy consiguiendo el MesActual actual: ?", mesActual);
+/*     console.log("estoy consiguiendo el MesActual actual: ?", mesActual);
+ */
+    /* fecha actual en ms */
+    let fechaActualMS= Date.now();
+/*     console.log("la fecha actual en MS ES:", fechaActualMS);
+ */
 
     return (
         <div className='mes'>
@@ -40,8 +44,8 @@ function MesContainer() {
 
             /* extraigo el mes de la fecha formateada */
             let MesEvento= fechaEventoFinal.getMonth() +1;
-            console.log("el recital es el mes: ", MesEvento);
-
+/*             console.log("el recital es el mes: ", MesEvento);
+ */
 
                             /* let FechaDelEvento= (evento.fecha.seconds)
                             console.log("fecha del evento en ms: ", FechaDelEvento);
@@ -52,8 +56,8 @@ function MesContainer() {
 
     return(
 
-        <div >
-            {MesEvento === mesActual 
+        <div key={evento.id}>
+            {MesEvento === mesActual && fechaActualMS < fechaEventoEnMs
             ?
             <MesList data={evento} />
             : 

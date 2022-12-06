@@ -24,7 +24,7 @@ function EventosDestacadosContainer() {
                 
             {EventosDestacados.map((evento) =>{
                 return(
-                        <div className='eventos'>
+                        <div className='eventos' key={evento.id}>
                             {evento.destacados === 1 
                             ?
                             <EventosDestacadosList data={evento} />
