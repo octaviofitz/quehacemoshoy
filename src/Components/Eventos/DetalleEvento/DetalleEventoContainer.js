@@ -1,6 +1,7 @@
 //react
 import { useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
+import { collection, getDocs, getFirestore } from 'firebase/firestore';
 
 //components
 import DetalleEvento from '../DetalleEvento/DetalleEvento'
@@ -9,6 +10,8 @@ import db from '../../../Firebase/firebase'
 import {doc, getDoc} from 'firebase/firestore'
 
 function DetalleEventoContainer() {
+
+  /* traigo los datos de los eventos y el params  */
 
     const [evento, setEvento] = useState([])
    
@@ -30,7 +33,7 @@ function DetalleEventoContainer() {
 
     return (
       <>
-        <DetalleEvento key={evento.id} data={evento} /> 
+        <DetalleEvento data={evento}/>
       </>
     )
   }
