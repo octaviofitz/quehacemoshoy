@@ -47,7 +47,8 @@ let FechaActualMS= Date.now();
                         {DiasDiferencia < 7 && FechaActualMS < fechaEventoEnMs
                         ?
                         <div className='eventos'>
-                        <SemanaList data={evento}/>
+                        <SemanaList data={evento} />
+                        
                     </div> 
                     :
                     null

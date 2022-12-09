@@ -1,3 +1,11 @@
+#loader{
+  color: #E42538;
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto;
+  align-items: center;
+}
+
 .detalleEvento{
     margin: 10vw;
 }
@@ -9,15 +17,25 @@
     border-radius: 10px;
 }
 
+.detalleEvento .infoFechaPrecio{
+  background-color: #f8f8f8;
+}
+
+.detalleEvento .fecha,
+.detalleEvento .precio{
+  margin-top: 1.1rem;
+  font-size: 1.25rem;
+}
+
 .detalleEvento .titulo{
-    font-size: 1.75rem;
+    font-size: 1.85rem;
     font-family: 'Nunito', sans-serif;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
 }
 
 .detalleEvento .lugar{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
     font-family: 'Nunito', sans-serif;
     text-transform: uppercase;
@@ -80,6 +98,12 @@
     color: #000000;
   }
   
+.detalleEvento .video{
+  border-radius: 10px;
+  width: 80vw;
+  height: 200px;
+}
+
 .informacionContainer .titulo{
     margin-top: 2rem;
     font-family: 'Nunito', sans-serif;
@@ -94,6 +118,35 @@
     text-transform: uppercase;
     font-size: 1rem;
     color: #000000;
+}
+
+.locacion .informacion{
+  font-size: 1.1rem;
+}
+
+.locacion .img{
+  width: 80vw;
+  display: flex;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+}
+
+.locacion .transporte{
+  margin: 2rem 0;
+  font-size: 1.25rem;
+}
+
+.locacion .map{
+  width: 80vw;
+  height: 500px;
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin: 0;
+}
+
+.SfQLQb-dIxMhd-bN97Pc-b3rLgd .i4ewOd-pzNkMb-tJHJj{
+  background-color: #E42538;
 }
 
   @media (min-width: 768px) {

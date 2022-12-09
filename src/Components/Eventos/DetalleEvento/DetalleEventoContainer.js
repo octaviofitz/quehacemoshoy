@@ -8,13 +8,14 @@ import DetalleEvento from '../DetalleEvento/DetalleEvento'
 //firebase
 import db from '../../../Firebase/firebase'
 import {doc, getDoc} from 'firebase/firestore'
+import { CircularProgress } from '@mui/material';
 
 function DetalleEventoContainer() {
 
   /* traigo los datos de los eventos y el params  */
 
     const [evento, setEvento] = useState([])
-   
+    const [loader, setLoader] = useState(true)
     const { id } = useParams()
 
      async function getEvent(db) {
@@ -24,6 +25,8 @@ function DetalleEventoContainer() {
             let evento= docSnap.data();
             evento.id= docSnap.id;
             setEvento(evento)
+            setLoader(false)
+            console.log(evento);
         } 
     }
 
@@ -33,7 +36,10 @@ function DetalleEventoContainer() {
 
     return (
       <>
-        <DetalleEvento data={evento}/>
+      { loader ? <CircularProgress id='loader'/>
+      :
+      <DetalleEvento data={evento}/>
+      }
       </>
     )
   }

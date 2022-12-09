@@ -18,7 +18,7 @@ function TodosContainer() {
 
     /* fecha actual en ms */
     let fechaActualMS= Date.now();
-
+    
     return (
         <div className='containerTodos'>
 
@@ -27,7 +27,6 @@ function TodosContainer() {
 
             {EventosTodos.map((evento) =>{
                 let fechaEventoEnMs= evento.fecha.seconds * 1000;
-
                 return(
                     <div key={evento.id}>                    
                         {fechaActualMS < fechaEventoEnMs
