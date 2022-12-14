@@ -25,13 +25,14 @@ function AppRouter() {
             <BrowserRouter>
 
             <NavBar />
-            <Banner />   
+          {/*   <Banner />    */}
             
              <div className='body'>
            
             <Routes>
 
                 <Route path='/' element={<HomePage />} />
+                {/* <Route path='/' element={<Banner />} /> */}
                 <Route path='/nosotros' element={<Nosotros />} />
                 <Route path='/hoy' element={<HoyContainer />} />
                 <Route path='/semana' element={<SemanaContainer />} />

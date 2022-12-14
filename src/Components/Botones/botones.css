@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2rem 3rem;
+    margin: 2rem auto;
     color: #DECFD0;
 }
 
@@ -41,7 +41,111 @@
     border: none;
 }
 
+
+
+.boton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: none;
+    padding: 0 3rem;
+    width: 75vw;
+    margin: auto;
+    align-items: center;
+   }
+
+  #boton1{
+    background-color: #E42538;
+    margin: 0.5rem;
+    margin: 0.5rem auto;
+    align-items: center;
+  } 
+
+  #boton2{
+    background-color: #F94E7B;
+    margin: 0.5rem;
+    margin: 0.5rem auto;
+    align-items: center;
+  }
+
+  #boton3{
+    background-color: #F8BD4F;
+    margin: 0.5rem;
+    margin: 0.5rem auto;
+    align-items: center;
+  }
+
+  #boton4{
+    background-color: #4C918F;
+    margin: 0.5rem;
+    margin: 0.5rem auto;
+    align-items: center;
+  }
+   
+   .boton:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #325771;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+   }
+   
+   .boton:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+   }
+   
+   .boton span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+/*     letter-spacing: 0em;
+ */    z-index: 20;
+    transition: all 1s ease-in-out;
+    font-family: 'Nunito', sans-serif;
+   }
+   
+   .boton:hover span {
+    color: #ffff;
+    animation: scaleUp 0.3s ease-in-out;
+   }
+   
+   @keyframes scaleUp {
+    0% {
+     transform: scale(1);
+    }
+   
+    50% {
+     transform: scale(0.95);
+    }
+   
+    100% {
+     transform: scale(1);
+    }
+   }
+   
+
+
+
 @media (min-width: 768px){
+
+    .boton{
+        width: 20vw;
+        height: 5rem;
+        margin: 0 2rem;
+        padding: 0 2rem;
+    }
 
     .botones{
         display: flex;
@@ -56,13 +160,23 @@
         width: 22vw;
     }
 
+    #boton1, #boton2, #boton3, #boton4{
+        padding: 0rem;
+        margin: 0 1rem;
+    }
+
 }
 
 @media (min-width: 1024px) {
 
-    .botones .botonIndividual{
-        padding: 1rem 8rem;
-        margin: 0.35rem 2vw;
-        width: 20vw;
+    .boton{
+        width: 15vw;
+        height: 5rem;
+        margin: 0 2rem;
+        padding: 0 2rem;
     }
+
+    .boton span {
+        font-size: 1.3em;
+       }
 }

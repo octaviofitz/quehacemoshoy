@@ -26,8 +26,7 @@ function DetalleEvento({data}) {
 console.log(locaciones);
 
     return (
-
-
+      
       <section className='detalleEvento'>   
              <div>
             <h3 className='titulo'>{data.evento}</h3>
@@ -52,6 +51,7 @@ console.log(locaciones);
                       ?
                       <div className='locacion'>
                       <p className='informacion'>{locacion.descripcion}</p>
+                      <p className='capacidad'><b>Capacidad del lugar:</b> {locacion.capacidad} personas</p>
                       <img src={locacion.img} alt='Imagen locación' className='img' />
                       <img src={locacion.img1} alt='Imagen locación' className='img' />
                       <p className='transporte'><b>Formas de llegar:</b> {locacion.transporte}</p>

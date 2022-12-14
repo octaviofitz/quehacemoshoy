@@ -97,7 +97,7 @@
     font-size: 1.2rem;
     color: #000000;
   }
-  
+
 .detalleEvento .video{
   border-radius: 10px;
   width: 80vw;
@@ -124,6 +124,11 @@
   font-size: 1.1rem;
 }
 
+.locacion .capacidad{
+  font-size: 1.17rem;
+  margin-top: 1rem;
+}
+
 .locacion .img{
   width: 80vw;
   display: flex;
@@ -145,13 +150,72 @@
   margin: 0;
 }
 
-.SfQLQb-dIxMhd-bN97Pc-b3rLgd .i4ewOd-pzNkMb-tJHJj{
-  background-color: #E42538;
-}
-
   @media (min-width: 768px) {
+
+    .detalleEvento{
+      margin: 6vw;
+  }
+  
+  .detalleEvento .imagen{
+      width: 87vw;
+      justify-content: left; 
+      margin: 0;
+  }
+  
+  .detalleEvento .fecha,
+  .detalleEvento .precio{
+    font-size: 1.4rem;
+  }
+  
+  .detalleEvento .titulo{
+      font-size: 3rem;
+  }
+  
+  .detalleEvento .lugar{
+      font-size: 1.8rem;
+  }
+
     .button-53 {
       padding: .75rem 3rem;
       font-size: 1.25rem;
     }
+
+    .detalleEvento .descripcion{
+      font-size: 1.4rem;
+    }
+  
+  .detalleEvento .video{
+    border-radius: 10px;
+    width: 87vw;
+    height: 350px;
+  }
+  
+  .informacionContainer .titulo{
+      font-size: 1.8rem;
+  }
+  
+
+  .locacion .informacion{
+    font-size: 1.3rem;
+  }
+  
+  .locacion .capacidad{
+    font-size: 1.3rem;
+  }
+  
+  .locacion .img{
+    width: 87vw;
+    height: 50vh;
+    margin: 2rem 0;
+  }
+  
+  .locacion .transporte{
+    font-size: 1.4rem;
+  }
+  
+  .locacion .map{
+    width: 87vw;
+  }
+
+
 }
