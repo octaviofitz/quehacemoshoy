@@ -29,14 +29,16 @@ console.log(locaciones);
       
       <section className='detalleEvento'>   
              <div>
+              <div className='containerlugarevento'>
             <h3 className='titulo'>{data.evento}</h3>
             <p className='lugar'>{data.lugar}</p>
+            </div>
            <img src={data.img} className='imagen' alt='Imagen Evento' />
            <div className='infoFechaPrecio'>
            <p className='fecha'><b>Fecha del evento: </b>{fechaEventoFormateada}</p>
            <p className='precio'><b>Entradas desde: </b>${data.precio}</p>
            </div>
-          <a href={data.link} target='_blank'><button className="button-53" role="button">Conseguir entradas</button></a>
+          <a href={data.link} target='_blank'><button id='boton1' className='botonEvento'><span>Conseguir entradas</span></button></a>
           <p className='descripcion'>{data.descripcion}</p>
 
           <iframe className='video' src={data.musica} title="YouTube video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen loading='lazy'></iframe>
@@ -51,11 +53,11 @@ console.log(locaciones);
                       ?
                       <div className='locacion'>
                       <p className='informacion'>{locacion.descripcion}</p>
-                      <p className='capacidad'><b>Capacidad del lugar:</b> {locacion.capacidad} personas</p>
+                      <p className='capacidad'><b>Capacidad del lugar:</b> {locacion.capacidad} personas.</p>
+                      <p className='transporte'><b>Formas de llegar:</b> {locacion.transporte}.</p>
+                      <iframe src={locacion.mapa} className='map'></iframe>
                       <img src={locacion.img} alt='Imagen locación' className='img' />
                       <img src={locacion.img1} alt='Imagen locación' className='img' />
-                      <p className='transporte'><b>Formas de llegar:</b> {locacion.transporte}</p>
-                      <iframe src={locacion.mapa} className='map'></iframe>
                       </div>
                   :
                         null

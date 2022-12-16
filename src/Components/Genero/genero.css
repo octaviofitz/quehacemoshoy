@@ -1,0 +1,35 @@
+.genero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem auto;
+    color: #DECFD0;
+    border-radius: 3px;
+    padding: 1rem 0;
+    box-shadow: rgb(0 0 0 / 30%) 0px 2px 4px 0px;
+    background-color: #fff;
+}
+
+.genero .microfono{
+    width: 40vw;
+    display: flex;
+    margin: auto;
+}
+
+.genero .titulodata{
+    text-align: center;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-top: 1.4rem;
+}
+
+.genero .data{
+    color: black;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
+    padding: 0rem 2.5rem;
+    font-weight: 600;
+}

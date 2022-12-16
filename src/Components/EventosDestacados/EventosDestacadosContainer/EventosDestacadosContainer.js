@@ -17,7 +17,7 @@ function EventosDestacadosContainer() {
 
     return (
         <section className='destacadosContainer'>
-                <h2 className='titulo'>Eventos Destacados</h2>
+                <h2 className='titulo'>Recitales Destacados</h2>
             
             <article>
 

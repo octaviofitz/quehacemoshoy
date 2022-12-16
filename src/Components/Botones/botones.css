@@ -4,44 +4,27 @@
     justify-content: center;
     margin: 2rem auto;
     color: #DECFD0;
-}
-
-.botones .botonIndividual{
+    border-radius: 3px;
     padding: 1rem 0;
-    margin: 0.35rem 0;
-}
-.botones a{
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 700;
+    box-shadow: rgb(0 0 0 / 30%) 0px 2px 4px 0px;
+    background-color: #fff;
 }
 
-.botones a:hover{
-    color: #ffff;
-    font-weight: 900;
+.botones .calendario{
+    width: 40vw;
+    border-radius: 10px;
+    display: flex;
+    margin: 1rem auto 0;
 }
 
-#primerBoton{
-    background-color: #E42538;
-    border: none;
+.botones .data{
+    color: black;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
+    padding: 1rem 2.5rem;
+    font-weight: 600;
 }
-
-#segundoBoton{
-    background-color: #F94E7B;
-    border: none;
-}
-
-#tercerBoton{
-    background-color: #F8BD4F;
-    border: none;
-}
-
-#cuartoBoton{
-    background-color: #4C918F;
-    border: none;
-}
-
-
 
 .boton {
     position: relative;

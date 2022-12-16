@@ -1,13 +1,14 @@
 import React from 'react';
-
+import BannerIndex from '../../img/banner2.jpg'
 /* Css */
 import '../Banner/banner.css'
 
 function Banner() {
     return (
-        <div>
-             <img src="https://cdn.getcrowder.com/images/1640641688321-polooo.jpeg" alt="banner" className="Banner" />
-       </div>
+        <section className='contenedorBanner'>
+             <img src={BannerIndex} alt="banner" className="Banner" />
+{/*              <p className='texto'>Tu Recital Hoy</p>
+ */}       </section>
     );
 }
 

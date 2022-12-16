@@ -1,9 +1,28 @@
+.contenedorBanner{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
 .Banner{
-    width: 100vw;
+    width: 100vw !important;
     height: 35vh;
     display: flex;
     justify-content: center;
     margin: auto;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.contenedorBanner .texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: black;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
 }
 
 @media (min-width: 1024px){
