@@ -22,7 +22,9 @@ function TodosContainer() {
     return (
         <div className='containerTodos'>
 
-            <h2 className='titulo'>Todos los eventos</h2>           
+            <div class="titulo" id='title'>
+            <h3>Todos los recitales</h3>
+            </div>    
             <div className='containerComponente'>
 
             {EventosTodos.map((evento) =>{

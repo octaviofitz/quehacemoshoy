@@ -25,7 +25,9 @@ let FechaActualMS= Date.now();
     return (
         <div className='containerSemana'>
 
-            <h2 className='titulo'>Eventos esta semana</h2>   
+        <div class="titulo" id='title'>
+            <h3>Recitales esta semana</h3>
+            </div>    
 
             <div className='containerComponente'>
 

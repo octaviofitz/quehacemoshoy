@@ -7,8 +7,7 @@ function Banner() {
     return (
         <section className='contenedorBanner'>
              <img src={BannerIndex} alt="banner" className="Banner" />
-{/*              <p className='texto'>Tu Recital Hoy</p>
- */}       </section>
+                   </section>
     );
 }
 
