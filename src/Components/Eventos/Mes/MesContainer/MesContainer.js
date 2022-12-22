@@ -29,7 +29,10 @@ function MesContainer() {
 
     return (
         <div className='mes'>
-            <h2 className='titulo'>Eventos este mes</h2>
+          
+             <div class="titulo" id='title'>
+            <h3>Recitales este mes</h3>
+            </div> 
 
             <div className='containerComponente'>
 
